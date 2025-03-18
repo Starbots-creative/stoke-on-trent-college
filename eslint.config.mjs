@@ -1,6 +1,9 @@
+import { FlatCompat } from "@eslint/eslintrc";
+import eslintPluginJsxA11y from "eslint-plugin-jsx-a11y";
+import simpleImportSort from "eslint-plugin-simple-import-sort";
+import eslintPluginPrettier from "eslint-plugin-prettier";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -9,6 +12,50 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [...compat.extends("next/core-web-vitals")];
+const eslintConfig = [
+  ...compat.extends("next/core-web-vitals"),
+  {
+    plugins: {
+      "simple-import-sort": simpleImportSort,
+      "jsx-a11y": eslintPluginJsxA11y,
+      prettier: eslintPluginPrettier,
+    },
+    rules: {
+      // Import Sorting
+      "simple-import-sort/imports": "warn",
+      "simple-import-sort/exports": "warn",
+
+      // JSX A11y Rules
+      "jsx-a11y/anchor-is-valid": "warn",
+      "jsx-a11y/label-has-associated-control": [
+        "error",
+        {
+          assert: "either",
+          depth: 3,
+        },
+      ],
+
+      // ESLint + React Rules
+      "no-underscore-dangle": "off",
+      "import/extensions": "off",
+      "import/prefer-default-export": "off",
+
+      // React-Specific Rules
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-props-no-spreading": "off",
+      "react/jsx-filename-extension": [1, { extensions: [".jsx", ".js"] }],
+      "react/forbid-prop-types": "off",
+      "react/require-default-props": [
+        "error",
+        {
+          ignoreFunctionalComponents: true,
+        },
+      ],
+
+      // Prettier Integration
+      "prettier/prettier": "error",
+    },
+  },
+];
 
 export default eslintConfig;
