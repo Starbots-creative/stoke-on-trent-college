@@ -1,7 +1,7 @@
 import { FlatCompat } from "@eslint/eslintrc";
 import eslintPluginJsxA11y from "eslint-plugin-jsx-a11y";
-import simpleImportSort from "eslint-plugin-simple-import-sort";
 import eslintPluginPrettier from "eslint-plugin-prettier";
+import simpleImportSort from "eslint-plugin-simple-import-sort";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -39,6 +39,11 @@ const eslintConfig = [
       "no-underscore-dangle": "off",
       "import/extensions": "off",
       "import/prefer-default-export": "off",
+      "no-console": ["warn", { allow: ["warn", "error"] }],
+      "no-unused-vars": [
+        "error",
+        { vars: "all", args: "after-used", ignoreRestSiblings: true },
+      ],
 
       // React-Specific Rules
       "react/react-in-jsx-scope": "off",
