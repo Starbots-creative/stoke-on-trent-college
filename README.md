@@ -8,7 +8,6 @@ Welcome to the **Stoke Collage Landing Page Challenge!** In this project, we’l
 ✅ Collaborative coding & peer reviews<br>
 ✅ Building reusable React components in a modern web framework<br>
 
-
 ### Project Structure & Workflow
 
 1. Clone this Repository – This repo contains the porject you will be working on ready for and set up for your contribution.
@@ -16,7 +15,6 @@ Welcome to the **Stoke Collage Landing Page Challenge!** In this project, we’l
 3. Build Your Component – Develop your assigned component inside the /components folder using React.
 4. Submit a Pull Request (PR) – Once your component is ready, create a pull request to the main branch.
 5. Peer Review & Merge – Another student will review your PR before it gets merged.
-
 
 ## Getting Started with GitHub Desktop
 
@@ -26,42 +24,53 @@ Welcome to the **Stoke Collage Landing Page Challenge!** In this project, we’l
 2. Clone the repository by clicking “File” → “Clone repository” and selecting the project from GitHub.
 3. Create a new branch for your component by clicking “Current Branch” → “New Branch” and naming it (e.g., navigation).
 4. Open your project in vs code and work on your branch.
-5. You can associate your branch with the git hub issue in the issue itself: [Landing Page Issues](https://github.com/StarbotsCreativeLtd/Stoke-on-Trent-College/issues). This way when you create a pull request (PR) the issue will be linked and closed when your PR is merged with the main code base. 
+5. You can associate your branch with the git hub issue in the issue itself: [Landing Page Issues](https://github.com/StarbotsCreativeLtd/Stoke-on-Trent-College/issues). This way when you create a pull request (PR) the issue will be linked and closed when your PR is merged with the main code base.
 6. Make your changes and commit them with a clear message from using VS codes built in version control features.
 7. Click “Push origin” to upload your changes to GitHub.
 8. Open a pull request (PR) on GitHub for review and merging.
+
 ## Getting Started with Git Using Terminal Commands
 
 1. Clone the repo:
- ```
+
+```
 git clone <repo-url>
 cd <project-folder>
 ```
+
 2. Create a new branch:
+
 ```
 git checkout -b navigation
 ```
+
 3. Add and commit changes (see commit etiquette below):
+
 ```
 git add .
 git commit -m "feat: added Navigation component"
 ```
+
 4. Push your branch to GitHub:
+
 ```
 git push origin navigation
 ```
-5. Open a pull request (PR) on GitHub.
 
+5. Open a pull request (PR) on GitHub.
 
 ## Commit Etiquette & Semantic Commit Messages
 
 Good commit messages make collaboration easier. Use semantic commits to describe changes properly.
 
 #### Commit Message Format:
+
 ```
 <type>: <short description>
 ```
+
 #### Common Commit Types:
+
 - feat: – Adding a new feature (e.g., feat: added responsive navbar)
 - fix: – Fixing a bug (e.g., fix: corrected form validation issue)
 - refactor: – Code improvements that don’t change functionality
@@ -75,17 +84,17 @@ Good commit messages make collaboration easier. Use semantic commits to describe
 ✅ fix: resolved broken image in hero section <br>
 ✅ style: improved button spacing in footer <br>
 
-
 #### Commit Best Practices:
+
 - Keep messages concise but meaningful.
 - Use present tense (add, not added).
 - Group related changes into a single commit instead of many small ones.
 - Push only completed work (avoid WIP commits unless necessary).
 
-
 ## Component Assignments
 
 Each student will work on one of the following:
+
 1. Navigation – A navigation system with open and closed states on both destop and mobile.
 2. Hero Section – A welcome banner with text & an image.
 3. Features – A section displaying key features with tabs/cards.
@@ -131,10 +140,12 @@ Using **VS Code extensions** can also enhance **productivity** in many ways—wh
 🔗 [Install React Snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 
 ### Recommended Settings for VS Code
+
 1. Open VS Code settings (Cmd + , on Mac, Ctrl + , on Windows).
 2. Search for Format on Save and enable it.
 3. Search for Editor: Default Formatter, select Prettier - Code formatter.
 4. You can find your settings json file by pressing CMD + SHIFT + P (CRTL + SHIFT + P for windows) and searching for settings - you will see "Open user settings (JSON) - Add this to your settings.json file for automatic linting:
+
 ```
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": [
@@ -143,7 +154,9 @@ Using **VS Code extensions** can also enhance **productivity** in many ways—wh
     "source.fixAll.stylelint"
   ]
 ```
-If you don't already have a json object in your settings file then be sure to wrap this in curly braces like so : 
+
+If you don't already have a json object in your settings file then be sure to wrap this in curly braces like so :
+
 ```
 {
   "editor.formatOnSave": true,
@@ -154,59 +167,63 @@ If you don't already have a json object in your settings file then be sure to wr
   ]
 }
 ```
+
 If a json object already exists add it in line inside the existing curly braces.
 
-Heres a little video on some of the code config files you will see in the repo :  📽️ [Config Files](https://www.youtube.com/watch?v=14WanxTD2O4&t=89s)
-
-
+Heres a little video on some of the code config files you will see in the repo : 📽️ [Config Files](https://www.youtube.com/watch?v=14WanxTD2O4&t=89s)
 
 ## Installing Node
 
 Next.js runs on Node.js, so make sure you have it installed.
 If not installed, grab it from [Node.js official site](https://nodejs.org/).
 
-We will also be using yarn as our package manager so once you have node installed run: 
+We will also be using yarn as our package manager so once you have node installed run:
+
 ```
 npm install -g yarn
-``` 
-in the terminal to install yarn globally. 
+```
+
+in the terminal to install yarn globally.
 
 ## Starting the Dev server
+
 Once you have cloned the project from GitHub and have Node and VScode set up you are ready to begin! <br>
 Navigate to the projects root directory using cd <PATH> in the comand line. <br>
-You can get the path from the GitHub GUI by right clicking on the current repository tab at the top and clicking copy repo path. 
+You can get the path from the GitHub GUI by right clicking on the current repository tab at the top and clicking copy repo path.
 
-To install the dependancies for this project run: 
-``` 
+To install the dependancies for this project run:
+
+```
 yarn
 ```
 
-in the terminal from within the projects root directory. This will install all the required packages for the project. 
+in the terminal from within the projects root directory. This will install all the required packages for the project.
 
 Now you are now ready to run the dev server:
+
 ```
 yarn dev
-``` 
+```
+
 This will spin up a dev server and allow your browser to access the project via localhost:3000.
 
 Next js renders the project live in the browser so now you can start building your components and see them update live in the dev server!
 
-
 ## First Steps
 
-Inside your git issue you will see the top comment contains and overview of the desired outcomes with some information about how to attempt a solution. 
+Inside your git issue you will see the top comment contains and overview of the desired outcomes with some information about how to attempt a solution.
 This will also include the acceptance criteria for the issue and whatever other relevant information is required.
 I have created a file structure for this project with blank files ready for your components.
 You will find your component file inside the `components` directory.
 
 You can start coding right away and committing changes to your branch. Be sure to make your commits at what feels like a 'good place'. For example don't make a commit half way through defining a function. Finish what you are doing then make a commit. Even if what you have done doesn't work has some bugs, its okay to commit. A completed attempt will help get better feedback or support than a half written ...
 
-You are welcome to ask for support within your git issue. You can tag myself or your fellow students using @ followed by their username. 
-Please feel free to ask for help if you get stuck or are unsure. 
+You are welcome to ask for support within your git issue. You can tag myself or your fellow students using @ followed by their username.
+Please feel free to ask for help if you get stuck or are unsure.
 
 Git messages are styled using markdown. Try to use this where you can to structure your git comments and pull requests. 🔗 [Markdown Cheat sheet](https://www.markdownguide.org/cheat-sheet/)
 
-Once you have created a Pull request for your branch you can comment and provide feedback with using the same methods. 
+Once you have created a Pull request for your branch you can comment and provide feedback with using the same methods.
 
 If you have any questions feel free to @ me in your issue.
 
