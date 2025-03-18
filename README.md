@@ -207,7 +207,7 @@ yarn dev
 
 This will spin up a dev server and allow your browser to access the project via localhost:3000.
 
-Next js renders the project live in the browser so now you can start building your components and see them update live in the dev server!
+Next js renders the project live in the browser every time you save so now you can start building your components and see them update live in the dev server!
 
 ## First Steps
 
