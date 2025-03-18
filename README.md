@@ -16,7 +16,32 @@ Welcome to the **Stoke Collage Landing Page Challenge!** In this project, we’l
 4. Submit a Pull Request (PR) – Once your component is ready, create a pull request to the main branch.
 5. Peer Review & Merge – Another student will review your PR before it gets merged.
 
-## Getting Started with GitHub Desktop
+## Installing Node
+Next.js runs on Node.js, so make sure you have it installed.
+If not installed, grab it from [Node.js official site](https://nodejs.org/).
+
+Installing node **should** add Node & NPM to your PATH, **but sometimes it doesn’t**. <br>
+Check that node is properly install and in the PATH by running:
+```
+node -v
+npm -v
+```
+If the path is missing, you may need to add it manually. If this happens contact me and we can sort it out based on your system. 
+<br>
+
+> ### Gotcha! -
+> This is the simplest way to install the latest version of Node. However, if you do decide to persue a career in developemnt you could eventually run into a legacy issue where you are working on a site with an old version of node which wont work on your system. To mitigate this you can install Node using something called Node Version Mananger (NVM). This allows you to download multiple versions of node and fire them up for differnt projects. For the pupose of this exersize we will only be using the very latest technologies so we dont need to change version however its worth noting for future if you are interested in a career in developlent.
+<br>
+
+We will also be using yarn as our package manager so once you have node installed run:
+
+```
+npm install -g yarn
+```
+in the terminal to install yarn globally.
+<br>
+
+## Getting Started with GitHub Desktop 
 
 **GitHub Desktop** is a brilliant GUI for git work flows that helps you to manage repositories without using the command line.
 
@@ -58,6 +83,7 @@ git push origin navigation
 ```
 
 5. Open a pull request (PR) on GitHub.
+
 
 ## Commit Etiquette & Semantic Commit Messages
 
@@ -141,12 +167,11 @@ Using **VS Code extensions** can also enhance **productivity** in many ways—wh
 
 ### Recommended Settings for VS Code
 
-1. Open VS Code settings (Cmd + , on Mac, Ctrl + , on Windows).
-2. Search for Format on Save and enable it.
-3. Search for Editor: Default Formatter, select Prettier - Code formatter.
-4. You can find your settings json file by pressing CMD + SHIFT + P (CRTL + SHIFT + P for windows) and searching for settings - you will see "Open user settings (JSON) - Add this to your settings.json file for automatic linting:
+You can find your settings json file by pressing CMD + SHIFT + P (CRTL + SHIFT + P for windows) and searching for settings - you will see "Open user settings (JSON) - Add this to your settings.json file for automatic linting:
 
 ```
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": [
     "source.formatDocument",
@@ -159,6 +184,8 @@ If you don't already have a json object in your settings file then be sure to wr
 
 ```
 {
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": [
     "source.formatDocument",
@@ -172,23 +199,19 @@ If a json object already exists add it in line inside the existing curly braces.
 
 Heres a little video on some of the code config files you will see in the repo : 📽️ [Config Files](https://www.youtube.com/watch?v=14WanxTD2O4&t=89s)
 
-## Installing Node
+You can see the rules in the `prettierrc.js` and `eslint.config.mjs` files. Its okay to break these rules in dev. They will be notified to you with squiggly underlines and hovering over them should give you the violation and sometimes the solution, some of them will even fix themselves on saving such as classname order and import order. You should however try not to **commit** code with broken rules. For example the rule "no-console" is set so that any production code doesn't contain console logs. This is done to prevent accidentally exposing sensitive data to the client by leaving in a log you were using for development. Obviously during developement you need to log things in order to understand whats going on. So you are able to break the rules while developing, however if you commit code with a broken rule to a repository with a linked production server, if set up correctly the server won't build your new version until there are no broken rules.
 
-Next.js runs on Node.js, so make sure you have it installed.
-If not installed, grab it from [Node.js official site](https://nodejs.org/).
+<br>
 
-We will also be using yarn as our package manager so once you have node installed run:
+> ### Gotcha! -
+> Once you have added the settings you will need run `yarn lint --fix` and then fully close and reopen VS code in order for them to start working.
 
-```
-npm install -g yarn
-```
-
-in the terminal to install yarn globally.
+<br>
 
 ## Starting the Dev server
 
 Once you have cloned the project from GitHub and have Node and VScode set up you are ready to begin! <br>
-Navigate to the projects root directory using cd <PATH> in the comand line. <br>
+Navigate to the projects root directory using cd _YOUR/REPO/PATH_ in the command line. <br>
 You can get the path from the GitHub GUI by right clicking on the current repository tab at the top and clicking copy repo path.
 
 To install the dependancies for this project run:
@@ -221,7 +244,7 @@ You can start coding right away and committing changes to your branch. Be sure t
 You are welcome to ask for support within your git issue. You can tag myself or your fellow students using @ followed by their username.
 Please feel free to ask for help if you get stuck or are unsure.
 
-Git messages are styled using markdown. Try to use this where you can to structure your git comments and pull requests. 🔗 [Markdown Cheat sheet](https://www.markdownguide.org/cheat-sheet/)
+Git messages are styled using markdown. Try to use this where you can to structure your git comments and pull requests. 🔗 [Markdown Cheat sheet](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 Once you have created a Pull request for your branch you can comment and provide feedback with using the same methods.
 
