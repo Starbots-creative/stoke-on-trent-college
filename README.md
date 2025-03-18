@@ -199,7 +199,7 @@ This will also include the acceptance criteria for the issue and whatever other 
 I have created a file structure for this project with blank files ready for your components.
 You will find your component file inside the `components` directory.
 
-You can start coding right away and committing changes to your branch. Be sure to make your commits at what feels like a 'good place'. For example don't make a commit half way through defining a function. Finish what you are doing then make a commit. Even if what you have done doesn't work fully yet, its okay to commit. A completed attempt will help get better feedback or support than a half written ...
+You can start coding right away and committing changes to your branch. Be sure to make your commits at what feels like a 'good place'. For example don't make a commit half way through defining a function. Finish what you are doing then make a commit. Even if what you have done doesn't work has some bugs, its okay to commit. A completed attempt will help get better feedback or support than a half written ...
 
 You are welcome to ask for support within your git issue. You can tag myself or your fellow students using @ followed by their username. 
 Please feel free to ask for help if you get stuck or are unsure. 
