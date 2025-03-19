@@ -10,7 +10,7 @@ Welcome to the **Stoke Collage Landing Page Challenge!** In this project, we’l
 
 ### Project Structure & Workflow
 
-1. Clone this Repository – This repo contains the porject you will be working on ready for and set up for your contribution.
+1. Clone this Repository – This repo contains the project you will be working on.
 2. Create a Branch – Each student will create a new branch for their assigned component.
 3. Build Your Component – Develop your assigned component inside the /components folder using React.
 4. Submit a Pull Request (PR) – Once your component is ready, create a pull request to the main branch.
@@ -30,7 +30,7 @@ If the path is missing, you may need to add it manually. If this happens contact
 <br>
 
 > ### Gotcha! -
-> This is the simplest way to install the latest version of Node. However, if you do decide to persue a career in developemnt you could eventually run into a legacy issue where you are working on a site with an old version of node which wont work on your system. To mitigate this you can install Node using something called Node Version Mananger (NVM). This allows you to download multiple versions of node and fire them up for differnt projects. For the pupose of this exersize we will only be using the very latest technologies so we dont need to change version however its worth noting for future if you are interested in a career in developlent.
+> This is the simplest way to install the latest version of Node. However, if you do decide to persue a career in developemnt you could eventually run into a legacy issue where you are working on a site with an old version of node which wont work on your system. To mitigate this you can install Node using something called Node Version Mananger (NVM). This allows you to download multiple versions of node and fire them up for different projects. For the pupose of this exersize we will only be using the very latest technologies so we dont need to change version however its worth noting for future if you are interested in a career in developlent.
 <br>
 
 We will also be using yarn as our package manager so once you have node installed run:
@@ -50,8 +50,8 @@ in the terminal to install yarn globally.
 3. Create a new branch for your component. You can do this from within the Git issue itself and switching to the branch in the GUI or by clicking “Current Branch” → “New Branch” and naming it (e.g., navigation).
 4. Open your project in vs code and work on your branch.
 5. You can associate your branch with the git hub issue in the issue itself: [Landing Page Issues](https://github.com/StarbotsCreativeLtd/Stoke-on-Trent-College/issues). This way when you create a pull request (PR) the issue will be linked and closed when your PR is merged with the main code base.
-6. Make your changes and commit them with a clear message from using VS codes built in version control features.
-7. Click “Push origin” to upload your changes to GitHub.
+6. Make your changes and commit them with a clear message using VS codes built in version control features.
+7. You can also use the GUI to push changed, Click “Push origin” to upload your changes to GitHub.
 8. Open a pull request (PR) on GitHub for review and merging.
 
 ## Getting Started with Git Using Terminal Commands
@@ -242,16 +242,16 @@ Next js renders the project live in the browser every time you save so now you c
 Inside your git issue you will see the top comment contains and overview of the desired outcomes with some information about how to attempt a solution.
 This will also include the acceptance criteria for the issue and whatever other relevant information is required.
 I have created a file structure for this project with blank files ready for your components.
-You will find your component file inside the `components` directory.
+You will find your component file inside the `/components` directory.
 
-You can start coding right away and committing changes to your branch. Be sure to make your commits at what feels like a 'good place'. For example don't make a commit half way through defining a function. Finish what you are doing then make a commit. Even if what you have done doesn't work has some bugs, its okay to commit. A completed attempt will help get better feedback or support than a half written ...
+You can start coding right away and committing changes to your branch. Be sure to make your commits at what feels like a 'good place'. For example don't make a commit half way through defining a function. Finish what you are doing then make a commit. Even if what you have done doesn't work or has some bugs, its okay to commit. A completed attempt will help get better feedback or support than a half written ...
 
-You are welcome to ask for support within your git issue. You can tag myself or your fellow students using @ followed by their username.
+You are welcome to ask for support within your git issue. You can tag myself or your fellow students using @ followed by their username inside a comment.
 Please feel free to ask for help if you get stuck or are unsure.
 
-Git messages are styled using markdown. Try to use this where you can to structure your git comments and pull requests. 🔗 [Markdown Cheat sheet](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+Git comments and messages are styled using markdown. Try to use this where you can to structure your git comments and pull requests. 🔗 [Markdown Cheat sheet](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
-Once you have created a Pull request for your branch you can comment and provide feedback with using the same methods.
+Once you have created a Pull request for your branch you can comment and provide feedback using the same methods.
 
 If you have any questions feel free to @ me in your issue.
 
