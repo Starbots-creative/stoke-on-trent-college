@@ -21,7 +21,7 @@ Next.js runs on Node.js, so make sure you have it installed.
 If not installed, grab it from [Node.js official site](https://nodejs.org/).
 
 Installing node **should** add Node & NPM to your PATH, **but sometimes it doesn’t**. <br>
-Check that node is properly install and in the PATH by running:
+Check that node is properly installed and in the PATH by running:
 ```
 node -v
 npm -v
@@ -126,7 +126,7 @@ Good commit messages make collaboration easier. Use semantic commits to describe
 
 Each student will work on one of the following:
 
-1. Navigation – A navigation system with open and closed states on both destop and mobile.
+1. Navigation – A navigation system with open and closed states on both desktop and mobile.
 2. Hero Section – A welcome banner with text & an image.
 3. Features – A section displaying key features with tabs/cards.
 4. Testimonials – User reviews displayed in cards.
