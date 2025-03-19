@@ -47,7 +47,7 @@ in the terminal to install yarn globally.
 
 1. Download and install[ GitHub Desktop](https://desktop.github.com/).
 2. Clone the repository by clicking “File” → “Clone repository” and selecting the project from GitHub.
-3. Create a new branch for your component by clicking “Current Branch” → “New Branch” and naming it (e.g., navigation).
+3. Create a new branch for your component. You can do this from within the Git issue itself and switching to the branch in the GUI or by clicking “Current Branch” → “New Branch” and naming it (e.g., navigation).
 4. Open your project in vs code and work on your branch.
 5. You can associate your branch with the git hub issue in the issue itself: [Landing Page Issues](https://github.com/StarbotsCreativeLtd/Stoke-on-Trent-College/issues). This way when you create a pull request (PR) the issue will be linked and closed when your PR is merged with the main code base.
 6. Make your changes and commit them with a clear message from using VS codes built in version control features.
@@ -63,10 +63,15 @@ git clone <repo-url>
 cd <project-folder>
 ```
 
-2. Create a new branch:
+2. Create / navigate to a new branch:
 
 ```
 git checkout -b navigation
+```
+
+- You can also create a branch from the issue page in GitHub. If a branch already exists you can navigate to is using: 
+```
+git checkout <branch-name>
 ```
 
 3. Add and commit changes (see commit etiquette below):
