@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0c1321;
+  --foreground: #ffffff;
+  --forge-dark-navy: #0c1321;
+  --forge-navy-highlight: #1a2130;
+  --forge-light-grey: #d8d8d8;
+  --white: #ffffff;
+  --forge-light-blue: #0063e8;
+  --forge-dark-blue: #003782;
+  --forge-gradient-from: #01e0f4;
+  --forge-gradient-to: #0155c3;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-forge-dark-navy: var(--forge-dark-navy);
+  --color-forge-navy-highlight: var(--forge-navy-highlight);
+  --color-forge-light-grey: var(--forge-light-grey);
+  --color-white: var(--white);
+  --color-forge-light-blue: var(--forge-light-blue);
+  --color-forge-dark-blue: var(--forge-dark-blue);
+  --color-forge-gradient-from: var(--forge-gradient-from);
+  --color-forge-gradient-to: var(--forge-gradient-to);
+  --font-title: var(--font-orbitron);
+  --font-copy: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 }
