@@ -13,10 +13,6 @@ const navigationData = {
     imageSrc: "/logos/MainLogo.svg",
     altText: "Terminal Forge Logo",
   },
-  MobileButton: {
-    open: { imageSrc: "", altText: "Open Menu Icon" },
-    close: { imageSrc: "", altText: "Close Menu Icon" },
-  },
 };
 
 export default navigationData;

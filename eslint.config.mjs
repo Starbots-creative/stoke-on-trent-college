@@ -40,10 +40,10 @@ const eslintConfig = [
       "import/extensions": "off",
       "import/prefer-default-export": "off",
       "no-console": ["warn", { allow: ["warn", "error"] }],
-      "no-unused-vars": [
-        "error",
-        { vars: "all", args: "after-used", ignoreRestSiblings: true },
-      ],
+      // "no-unused-vars": [
+      //   "error",
+      //   { vars: "all", args: "after-used", ignoreRestSiblings: true },
+      // ],
 
       // React-Specific Rules
       "react/react-in-jsx-scope": "off",

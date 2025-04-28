@@ -2,6 +2,9 @@ import "./globals.css";
 
 import { Inter, Orbitron } from "next/font/google";
 
+import Footer from "@/components/organisms/Footer";
+import Header from "@/components/organisms/Header";
+
 const orbitron = Orbitron({
   variable: "--font-orbitron",
   subsets: ["latin"],
@@ -23,7 +26,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${orbitron.variable} ${inter.variable} ${inter.className} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

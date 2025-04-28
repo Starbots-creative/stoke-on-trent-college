@@ -8,7 +8,7 @@ const featuresData = {
   features: [
     {
       title: "DeloymentCLI",
-      features:
+      overview:
         "Simplifies app deployment to cloud environments (AWS, Azure, GCP) or on-prem servers. Automate deployment pipelines with just a few commands.",
       useCase:
         "Automatically deploy applications after every commit or run regular deployment tasks.",
@@ -16,7 +16,7 @@ const featuresData = {
     },
     {
       title: "TestRunnerCLI",
-      features:
+      overview:
         "Automates running tests and reporting results. Supports multiple testing frameworks (e.g., Jest, Mocha, PyTest).",
       useCase:
         "Run tests automatically during CI/CD processes or on a schedule.",
@@ -24,7 +24,7 @@ const featuresData = {
     },
     {
       title: "FileSyncCLI",
-      features:
+      overview:
         "Automatically sync files and directories between local machines, servers, or cloud storage.",
       useCase:
         "Backup data, synchronize development environments, or share files across teams.",
@@ -32,7 +32,7 @@ const featuresData = {
     },
     {
       title: "DBManagerCLI",
-      features:
+      overview:
         "Manage databases from the command line, including backup, restoration, migration, and query automation.",
       useCase:
         "Automate database maintenance tasks like backups or schema migrations.",
@@ -40,7 +40,7 @@ const featuresData = {
     },
     {
       title: "CloudSyncCLI",
-      features:
+      overview:
         "Sync your local files with cloud storage like AWS S3, Google Drive, or Dropbox using command-line commands.",
       useCase:
         "Create automated backups of important files, sync codebases with cloud storage, or transfer large files seamlessly.",
@@ -48,7 +48,7 @@ const featuresData = {
     },
     {
       title: "DeloymentCLI",
-      features:
+      overview:
         "Monitor server performance, resource usage (CPU, memory, disk), and uptime from the command line.",
       useCase:
         "Set up automated monitoring scripts to get alerts when server resources are running low or when a server goes down.",
