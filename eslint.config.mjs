@@ -48,7 +48,10 @@ const eslintConfig = [
       // React-Specific Rules
       "react/react-in-jsx-scope": "off",
       "react/jsx-props-no-spreading": "off",
-      "react/jsx-filename-extension": [1, { extensions: [".jsx", ".js"] }],
+      "react/jsx-filename-extension": [
+        1,
+        { extensions: [".jsx", ".js", ".tsx"] },
+      ],
       "react/forbid-prop-types": "off",
       "react/require-default-props": [
         "error",
