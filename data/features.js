@@ -1,7 +1,7 @@
 const featuresData = {
   title: " Features & Add Ons",
   image: {
-    sourceUrl: "",
+    sourceUrl: "@/public/images/deployment.png",
     altText:
       "Decoration image displaying Romeo the Robot with alot of awesome tech stuff",
   },
