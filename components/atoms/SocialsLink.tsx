@@ -10,7 +10,7 @@ export default function SocialsLink({ socialLink }) {
   return (
     <Link
       href={link}
-      id={key}
+      id={`${key}-link`}
       aria-label={`Link to ${key}`}
       className="relative flex aspect-square size-6 items-center justify-center transition duration-75 hover:scale-105 active:scale-95"
       rel="noopener noreferrer"
