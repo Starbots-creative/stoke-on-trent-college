@@ -23,12 +23,13 @@
  *    - The submit function should prevent the default form submission and log the current form data to the console.
  *
  * - Style the form using Tailwind CSS for layout, spacing, and responsiveness.
+ * - For the privacy Policy button you can just link to google.
  *
  */
 
 import contactData from "@/data/contact";
 
-export default function SimpleContactForm() {
+export default function ContactForm() {
   // console.log(contactData);
 
   return <section>Contact Form</section>;
