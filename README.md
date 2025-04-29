@@ -240,12 +240,38 @@ Next js renders the project live in the browser every time you save so now you c
 ## First Steps
 
 Inside your git issue you will see the top comment contains and overview of the desired outcomes with some information about how to attempt a solution.
-This will also include the acceptance criteria for the issue and whatever other relevant information is required.
-I have created a file structure for this project with blank files ready for your components.
-You will find your component file inside the `/components` directory.
+This will also include the **acceptance criteria** and any other relevant guidance.
+I have created a file structure for this project with folders and files already in placefor your components.
+You will find your assigned component file inside the `/components` directory.
 
+Each of the component files you will be working in contains a **comment at the top** with more information and suggestions on how to approach the tasks. Some of the tasks require changes to multiple files - this will also outlined in the top comment. 
+
+
+### Reusable Components
+
+I have created some basic UI components for you to use which also offer some insite into passing props between components and managing state outside of your parent components. These files include: 
+
+```
+/components/atoms/Navlink.tsx
+/components/atoms/PrimaryButton.tsx
+/components/atoms/SocialsLink.tsx
+/components/atoms/TestOnlyButton.tsx
+/components/atoms/Toggle.tsx
+```
+
+Have a look at these files if you need some insight into how props are passed and used across React Components.
+
+
+### Design System
+The Design System colours have also been added as tailwind classes. They are named as per their descriptions in the figma file with the prefix 'forge'. For example forge-dark-navy. 
+You can use these with tailwind utility classes for styling - ie: text-forge-dark-navy, bg-forge-light-grey etc.
+
+I have only included the colours from the design system, for layout and spacing (eg:padding, text size, margins etc) please use tailwind utility classes directly within yout jsx code. Try to keep styles **within the component** wherever possible. Abstraction is great — but not when it makes fixing a small bug months later a huge hassle.
+
+### Getting Started
 You can start coding right away and committing changes to your branch. Be sure to make your commits at what feels like a 'good place'. For example don't make a commit half way through defining a function. Finish what you are doing then make a commit. Even if what you have done doesn't work or has some bugs, its okay to commit. A completed attempt will help get better feedback or support than a half written ...
 
+### Communication
 You are welcome to ask for support within your git issue. You can tag myself or your fellow students using @ followed by their username inside a comment.
 Please feel free to ask for help if you get stuck or are unsure.
 
