@@ -5,7 +5,7 @@ const navigationData = {
     { title: "FAQ's", slug: "#faqs" },
     { title: "Contact", slug: "#contact" },
   ],
-  dektopLogo: {
+  desktopLogo: {
     imageSrc: "/logos/Logo.svg",
     altText: "Terminal Forge Logo",
   },
