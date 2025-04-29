@@ -1,4 +1,17 @@
-import Image from "next/image";
+/**
+ * TextOnlyButton Component
+ *
+ * A reusable text-only link button with a gradient style and an arrow icon.
+ *
+ * Props:
+ * - `link` (string): The URL the button should navigate to.
+ * - `label` (string): The text label displayed on the button (also used for accessibility).
+ *
+ * Usage:
+ * <TextOnlyButton label="Learn More" link="https://example.com" />
+ *
+ */
+
 import Link from "next/link";
 
 import Arrow from "@/public/icons/Arrow.svg";

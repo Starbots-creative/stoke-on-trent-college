@@ -1,3 +1,18 @@
+/**
+ * Toggle Component
+ *
+ * A customizable toggle switch with animated sliding knob and gradient background.
+ * Designed for use in various contexts like settings, feature toggles, or preferences.
+ *
+ * Props:
+ * - `state` (boolean): Current state of the toggle (on/off).
+ * - `handleChangeToggle` (function): Callback function to handle toggle state changes.
+ * - `context` (string): A string to identify the toggle's purpose (used for accessibility and element IDs).
+ *
+ * Usage:
+ * <Toggle state={isEnabled} handleChangeToggle={toggleHandler} context="notifications" />
+ */
+
 export default function Toggle({ state, handleChangeToggle, context }) {
   return (
     <div>

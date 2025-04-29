@@ -1,3 +1,17 @@
+/**
+ * NavLink Component
+ *
+ * A reusable navigation link styled with a gradient hover effect and subtle scaling animation.
+ *
+ * Props:
+ * - `link` (string): The URL or hash to navigate to.
+ * - `label` (string): The visible text for the link and also used for accessibility labeling and element ID.
+ *
+ * Usage:
+ * <NavLink link="/#features" label="Features" />
+ *
+ */
+
 import Link from "next/link";
 
 export default function NavLink({ link, label }) {
