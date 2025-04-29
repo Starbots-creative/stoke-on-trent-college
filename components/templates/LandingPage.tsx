@@ -1,4 +1,3 @@
-import { Button } from "../atoms/PrimaryButton";
 import FAQS from "../organisms/FAQs";
 import Features from "../organisms/Features";
 import HeroSection from "../organisms/Hero";
