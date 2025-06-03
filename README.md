@@ -33,13 +33,7 @@ If the path is missing, you may need to add it manually. If this happens contact
 > This is the simplest way to install the latest version of Node. However, if you do decide to persue a career in developemnt you could eventually run into a legacy issue where you are working on a site with an old version of node which wont work on your system. To mitigate this you can install Node using something called Node Version Mananger (NVM). This allows you to download multiple versions of node and fire them up for different projects. For the pupose of this exersize we will only be using the very latest technologies so we dont need to change version however its worth noting for future if you are interested in a career in developlent.
 <br>
 
-We will also be using yarn as our package manager so once you have node installed run:
-
-```
-npm install -g yarn
-```
-in the terminal to install yarn globally.
-<br>
+We will be using NPM as our package manager for this project.
 
 ## Getting Started with GitHub Desktop 
 
@@ -209,7 +203,7 @@ You can see the rules in the `prettierrc.js` and `eslint.config.mjs` files. Its 
 <br>
 
 > ### Gotcha! -
-> Once you have added the settings you will need run `yarn lint --fix` and then fully close and reopen VS code in order for them to start working.
+> Once you have added the settings you will need run `npm run lint -- --fix` and then fully close and reopen VS code in order for them to start working.
 
 <br>
 
@@ -222,7 +216,7 @@ You can get the path from the GitHub GUI by right clicking on the current reposi
 To install the dependancies for this project run:
 
 ```
-yarn
+npm install
 ```
 
 in the terminal from within the projects root directory. This will install all the required packages for the project.
@@ -230,7 +224,7 @@ in the terminal from within the projects root directory. This will install all t
 Now you are now ready to run the dev server:
 
 ```
-yarn dev
+npm run dev
 ```
 
 This will spin up a dev server and allow your browser to access the project via localhost:3000.
