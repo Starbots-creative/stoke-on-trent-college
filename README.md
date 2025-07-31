@@ -17,25 +17,29 @@ Welcome to the **Stoke Collage Landing Page Challenge!** In this project, we’l
 5. Peer Review & Merge – Another student will review your PR before it gets merged.
 
 ## Installing Node
+
 Next.js runs on Node.js, so make sure you have it installed.
 If not installed, grab it from [Node.js official site](https://nodejs.org/).
 
 Installing node **should** add Node & NPM to your PATH, **but sometimes it doesn’t**. <br>
 Check that node is properly installed and in the PATH by running:
+
 ```
 node -v
 npm -v
 ```
-If the path is missing, you may need to add it manually. If this happens contact me and we can sort it out based on your system. 
+
+If the path is missing, you may need to add it manually. If this happens contact me and we can sort it out based on your system.
 <br>
 
 > ### Gotcha! -
+>
 > This is the simplest way to install the latest version of Node. However, if you do decide to persue a career in developemnt you could eventually run into a legacy issue where you are working on a site with an old version of node which wont work on your system. To mitigate this you can install Node using something called Node Version Mananger (NVM). This allows you to download multiple versions of node and fire them up for different projects. For the pupose of this exersize we will only be using the very latest technologies so we dont need to change version however its worth noting for future if you are interested in a career in developlent.
-<br>
+> <br>
 
 We will be using NPM as our package manager for this project.
 
-## Getting Started with GitHub Desktop 
+## Getting Started with GitHub Desktop
 
 **GitHub Desktop** is a brilliant GUI for git work flows that helps you to manage repositories without using the command line.
 
@@ -63,7 +67,8 @@ cd <project-folder>
 git checkout -b navigation
 ```
 
-- You can also create a branch from the issue page in GitHub. If a branch already exists you can navigate to is using: 
+- You can also create a branch from the issue page in GitHub. If a branch already exists you can navigate to is using:
+
 ```
 git checkout <branch-name>
 ```
@@ -82,7 +87,6 @@ git push origin navigation
 ```
 
 5. Open a pull request (PR) on GitHub.
-
 
 ## Commit Etiquette & Semantic Commit Messages
 
@@ -203,6 +207,7 @@ You can see the rules in the `prettierrc.js` and `eslint.config.mjs` files. Its 
 <br>
 
 > ### Gotcha! -
+>
 > Once you have added the settings you will need run `npm run lint -- --fix` and then fully close and reopen VS code in order for them to start working.
 
 <br>
@@ -238,12 +243,11 @@ This will also include the **acceptance criteria** and any other relevant guidan
 I have created a file structure for this project with folders and files already in placefor your components.
 You will find your assigned component file inside the `/components` directory.
 
-Each of the component files you will be working in contains a **comment at the top** with more information and suggestions on how to approach the tasks. Some of the tasks require changes to multiple files - this will also outlined in the top comment. 
-
+Each of the component files you will be working in contains a **comment at the top** with more information and suggestions on how to approach the tasks. Some of the tasks require changes to multiple files - this will also outlined in the top comment.
 
 ### Reusable Components
 
-I have created some basic UI components for you to use which also offer some insite into passing props between components and managing state outside of your parent components. These files include: 
+I have created some basic UI components for you to use which also offer some insite into passing props between components and managing state outside of your parent components. These files include:
 
 ```
 /components/atoms/Navlink.tsx
@@ -255,17 +259,19 @@ I have created some basic UI components for you to use which also offer some ins
 
 Have a look at these files if you need some insight into how props are passed and used across React Components.
 
-
 ### Design System
-The Design System colours have also been added as tailwind classes. They are named as per their descriptions in the figma file with the prefix 'forge'. For example forge-dark-navy. 
+
+The Design System colours have also been added as tailwind classes. They are named as per their descriptions in the figma file with the prefix 'forge'. For example forge-dark-navy.
 You can use these with tailwind utility classes for styling - ie: text-forge-dark-navy, bg-forge-light-grey etc.
 
 I have only included the colours from the design system, for layout and spacing (eg:padding, text size, margins etc) please use tailwind utility classes directly within yout jsx code. Try to keep styles **within the component** wherever possible. Abstraction is great — but not when it makes fixing a small bug months later a huge hassle.
 
 ### Getting Started
+
 You can start coding right away and committing changes to your branch. Be sure to make your commits at what feels like a 'good place'. For example don't make a commit half way through defining a function. Finish what you are doing then make a commit. Even if what you have done doesn't work or has some bugs, its okay to commit. A completed attempt will help get better feedback or support than a half written ...
 
 ### Communication
+
 You are welcome to ask for support within your git issue. You can tag myself or your fellow students using @ followed by their username inside a comment.
 Please feel free to ask for help if you get stuck or are unsure.
 
